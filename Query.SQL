@@ -53,3 +53,71 @@ INSERT INTO Bookings (booking_id, user_id, match_id, seat_number, payment_status
 (503, 2, 101, 'A-13', 'Confirmed', 150.00),
 (504, 2, 101, NULL, NULL, 150.00),
 (505, 3, 102, 'C-20', 'Pending', 120.00);
+
+
+
+
+
+------------------------------------------View All Table Data----------------------
+select * from users;
+select * from matches;
+select * from bookings;
+
+
+                  ---------------------Now Query Part------------------------
+--query 1:
+
+
+select match_id,fixture,base_ticket_price from matches
+where tournament_category='Champions League' and match_status='Available';
+
+
+
+
+---query 2:
+select user_id,full_name,email from users
+where full_name ILIKE 'Tanvir%' or full_name ILIKE '%Haque';
+
+
+
+
+--query 3:
+select booking_id,user_id,match_id, coalesce(payment_status,'Action Required')as symmetric_status from
+  bookings
+  where payment_status is null;
+
+
+
+
+--query 4:
+
+select bookings.booking_id,
+  users.full_name,
+  matches.fixture,
+  bookings.total_cost from bookings
+  inner join users on bookings.user_id=users.user_id
+  inner join matches on bookings.match_id=matches.match_id;
+  
+
+
+--query 5:
+select users.user_id,
+  users.full_name,
+  bookings.booking_id from users
+  left join bookings on users.user_id=bookings.user_id;
+
+
+-- query 6:
+select booking_id,match_id,total_cost
+  from bookings
+  where total_cost >(select avg(total_cost) from bookings);
+
+
+
+
+
+
+
+-- query 7:
+select match_id,fixture,base_ticket_price from matches
+order by base_ticket_price desc limit 2 offset 1;
