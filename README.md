@@ -16,11 +16,11 @@ I added more data in draw.io like data type requirement etc .For Simplicity I dr
 
  //---------------------Interview Q&A-----------------
 
- Question-1:
+ Question-1:https://drive.google.com/file/d/1PrHDxasHDyvfpeAysdGmP_coSQB3e_LY/view?usp=sharing
 
 
- Question-2:
- 
+ Question-2:https://drive.google.com/file/d/1Df3thnKEgi5i-HD831ouc4yk3akfHHh7/view?usp=sharing
 
 
- Question-5:
+
+ Question-5:https://drive.google.com/file/d/1mB4FW9I7ASyuYZCQXg29qn34DFgfmsj1/view?usp=sharing
