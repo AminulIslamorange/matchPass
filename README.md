@@ -3,7 +3,7 @@ I have added all query in Query.SQL file.
 First I added All table data and Type then I inserted Data
 
 After then I added All Query.
-
+"Please check both of my designs."
 My database design in Draw.io:https://drive.google.com/file/d/1WO1nXh4HRal-iKR5FW93WUuTNCsl3QLG/view?usp=sharing
 
 I added more data in draw.io like data type requirement etc .For Simplicity I drown database design in DrawSQL.Please take a look there.

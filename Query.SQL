@@ -64,7 +64,7 @@ select * from matches;
 select * from bookings;
 
 
-                  ---------------------Now Query Part------------------------
+               --------Now Query Part------------------------
 --query 1:
 
 
